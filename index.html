@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>fashion</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!------- header section ------->
+    <header class="header">
+        <div class="logo"><a href="#home">Fashion</a></div>
+        <nav class="nav">
+            <a href="#men">Men</a>
+            <a href="#women">Women</a>
+            <a href="#children">Children</a>
+            <a href="#offers">Offers</a>
+            <a href="#contact">Contact Us</a>
+        </nav>
+        <div class="icon">
+            <i class="fa-solid fa-magnifying-glass" onclick="popactive(searchBox)"></i>
+            <i class="fa-solid fa-cart-shopping" onclick="popactive(cartBox)"></i>
+            <i class="fa-solid fa-right-to-bracket" onclick="popactive(profileBox)"></i>
+            <i id="menu-btn" class="fa-solid fa-bars"></i>
+        </div>
+    </header>
+    <div class="popSection">
+        <div id="searchBox" class="searchBox popBox">
+            <input type="text" placeholder="Serch.....">
+            <i class="fa-solid fa-magnifying-glass"></i>
+        </div>
+        <div id="cartBox" class="cartBox popBox"></div>
+        <div id="profileBox" class="profileBox popBox">
+            <input type="text" placeholder="Username">
+            <input type="text" placeholder="Password">
+            <p class="forgetPass">Forget Password</p>
+            <p class="button">Subscribe</p>
+        </div>
+    </div>
+
+    <!------- home section ------->
+    <div id="home" class="home">
+        <video autoplay muted loop plays-inline class="video">
+            <source src="video/homeBgVideo.mp4" type="video/mp4">
+        </video>
+        <div class="show">
+            <div class="home-text">
+                <p>Style is a way to say who you are without having to speak.</p>
+                <p>GET ALL THE LATEST TRENDS CLOTHES AT AN AFFORDABLE RATE.</p>
+                <p class="button">Shop now <i class="fa-solid fa-cart-shopping"></i></p>
+            </div>
+            <div class="home-image">
+                <img src="image/homeImageBg.png" width="100%" alt="">
+            </div>
+        </div>
+    </div>
+    <!------- men section ------->
+    <section class="section" id="men">
+        <h1 class="title">men</h1>
+        <div class="hori-line"></div>
+        <div class="product-container"></div>
+    </section>
+
+    <!------- women section ------->
+    <section class="section" id="women">
+        <h1 class="title">women</h1>
+        <div class="hori-line"></div>
+        <div class="product-container"></div>
+    </section>
+
+    <!------- offer section ------->
+    <section class="section" id="offers">
+        <h1 class="title" style="text-decoration: underline; font-weight: lighter !important;">offers</h1>
+        <div class="offers-container">
+            <div class="white">
+                <h1>Pay using your Credit Card</h1>
+                <p class="firstP">Get upto 50% off on paying with HDFC Credit Cards</p>
+                <p class="button">Apply Offer</p>
+                <img src="image/Credit-card.png" alt="">
+            </div>
+            <div class="black">
+                <h1>Valentine's Day Special</h1>
+                <p class="firstP">Get upto 40% off on DIAMOND Rings</p>
+                <p class="button">Apply Offer</p>
+                <img src="image/Diamond_ring.png" alt="">
+            </div>
+            <div class="black">
+                <h1>Frendship Day Offer</h1>
+                <p class="firstP">Buy 2 jackets and Get One Free</p>
+                <p class="button">Apply Offer</p>
+                <img src="image/frendship-day.png" alt="">
+            </div>
+            <div class="white">
+                <h1>Free Coupons</h1>
+                <p class="firstP">Do a Shopping of $100 And Get Free Coupons of $50</p>
+                <p class="button">Apply Offer</p>
+                <img src="image/free-coupons.jpg" alt="">
+            </div>
+        </div>
+    </section>
+
+    <!------- footer section ------->  
+    <footer class="section" id="contact">
+        <div>
+            <h1><i class="fa-regular fa-gem"></i> Fashion</h1>
+            <p>We deliver the best quality clothes at the cheapest rate. Walk in style everywhere you go and be updated with the latest trends!</p>
+            <p class="socialMediaIcon">
+                <i class="fa-brands fa-facebook"></i>
+                <i class="fa-brands fa-square-instagram"></i>
+                <i class="fa-brands fa-twitter"></i>
+                <i class="fa-brands fa-linkedin"></i>
+            </p>
+        </div>
+        <div>
+            <h1>Contact Info</h1>
+            <p><i class="fa-solid fa-phone"></i> 123-456-7890</p>
+            <p><i class="fa-solid fa-phone"></i> 111-222-3333</p>
+            <p><i class="fa-regular fa-envelope"></i> webdeveloperdemo@gmail.com</p>
+            <p><i class="fa-solid fa-location-dot"></i> Bihar, India</p>
+        </div>
+        <div>
+            <h1>Newsletter</h1>
+            <p>Get all the latest trends and updates and never miss out on anything!</p>
+            <input type="text" placeholder="Email........">
+            <p class="button">Subscribe</p>
+        </div>
+    </footer>
+
+
+    <script src="product-data.js"></script>
+    <script src="index.js"></script>
+    <script src="https://kit.fontawesome.com/1e0edc022d.js" crossorigin="anonymous"></script>
+</body>
+</html>
